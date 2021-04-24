@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+.myForm {
+  display: grid;
+  grid-template-areas:
+    "contact comments"
+    "... button";
+  grid-template-rows: 12em 2em;
+  grid-template-columns: 12em 1fr;
+  grid-gap: 0.8em;
+  background: #eee;
+  padding: 1.2em;
+}
+.myForm label {
+  grid-area: labels;
+}
+.myForm input {
+  grid-area: contact;
+  width: 100%;
+  padding: 1.1em;
+  border: none;
+  margin-bottom: 1em;
+}
+.myForm textarea {
+  min-height: calc(100% - 2em);
+  width: 100%;
+  border: none;
+}
+.contact-details {
+  grid-area: contact;
+}
+.comment-box {
+  grid-area: comments;
+}
+.myForm button {
+  grid-area: button;
+  border: 0;
+  background: rgb(0, 195, 255);
+  color: white;
+  border-radius: 2px;
+  width: 120px;
+}
+.footer-site {
+  display: flex;
+  flex-direction: column;
+}
+.media-site {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+}
+.footer-site > h1 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: rgb(150, 150, 150);
+}
