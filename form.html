@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="form.js" defer></script>
+  </head>
+  <body>
+    <p data-succes-message class="message"></p>
+    <fieldset>
+      <img src="happy.png" alt="happy" />
+      <form action="">
+        <p>
+          <input
+            data-name
+            type="text"
+            name="name"
+            placeholder="First Name"
+            class="js-required"
+          />
+        </p>
+        <p>
+          <input
+            type="text"
+            name="name"
+            placeholder="Last Name"
+            class="js-required"
+          />
+        </p>
+
+        <p>
+          <textarea
+            name="your message here..."
+            cols="50"
+            rows="10"
+            class="js-required"
+          ></textarea>
+        </p>
+        <p>
+          Gender:
+          <br />
+          <label><input type="radio" name="gender" value="m" />M</label>
+          <br />
+          <label><input type="radio" name="gender" value="f" />F</label>
+        </p>
+
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </fieldset>
+  </body>
+</html>
